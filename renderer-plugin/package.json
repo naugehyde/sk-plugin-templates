@@ -1,0 +1,30 @@
+{
+  "name": "configurator-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-react": "^7.10.4",
+    "react": "^16.13.1",
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.0.0",
+    "babel-loader": "^8.1.0"
+  },
+  "scripts": {
+    "format": "prettier-standard 'index.js'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run clean && npm run build",
+    "dev": "webpack --watch --mode development",
+    "build": "webpack --mode=production",
+    "clean": "rimraf ./public/*.js; rimraf ./public/*.txt",
+    "bundle-analyzer": "webpack-bundle-analyzer --port 4200 public/stats.json"
+  },
+  "keywords": [
+    "signalk-node-server-plugin",
+    "signalk-node-server-addon"
+  ],
+  
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "basic-plugin",
+  "version": "1.0.0",
+  "description": "Basic Signalk Node Server Plugin Template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "signalk-node-server-plugin"
+  ],
+  "author": "",
+  "license": "ISC" 
+}
